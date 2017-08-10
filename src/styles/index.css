@@ -1,0 +1,43 @@
+body {
+  margin: 0% 0%;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav, footer {
+  height: 8vh;
+}
+
+main {
+  min-height: 81.75vh;
+}
+
+footer span {
+  text-align: center;
+}
+
+.users-list-heading {
+  padding: 2% 4%;
+  color: #16a085;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card {
+  padding: 1.5% 3%;
+}
+
+.card-title {
+  color: #c0392b;
+  font-size: 2rem;
+}
+
+.card-img-top {
+  width: 15vw;
+  margin-left: 3%;
+}
+
+.account-type {
+  color: #2c3e50;
+  text-transform: capitalize;
+}
