@@ -20,10 +20,11 @@ class UserDetail extends Component {
               <div>{this.props.user.phone}</div>
               <div>{this.props.user.address}</div>
             </div>
+            <hr />
             {this.props.user.accounts.map((account) => {
               return (
                 <div key={account.id} onClick={() => this.props.selectAccount(account)}>
-                  <Link to={`/users/${id}/${account.id}`}>{account.accountType}</Link>
+                  <Link className='user-detail-account' to={`/users/${id}/${account.id}`}>{account.accountType}</Link>
                 </div>
               )
             })}

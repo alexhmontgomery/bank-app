@@ -37,9 +37,27 @@ footer span {
   margin-left: 3%;
 }
 
+.user-list-img {
+  width: 3vw;
+  margin: 0% 1%;
+}
+
+.user-detail-account {
+  text-transform: capitalize;
+}
+
 .account-type {
   color: #2c3e50;
   text-transform: capitalize;
+}
+
+.account-balance {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+button, a {
+  cursor: pointer;
 }
 
 #account-detail button {

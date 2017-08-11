@@ -16,10 +16,11 @@ class AccountDetail extends Component {
 
           <div className='card-block'>
             <h4 className='card-title account-type'>{this.props.account.accountType}</h4>
-            <hr />
+
             <h6 className='card-subtitle mb-2 text-muted'>{this.props.user.name}</h6>
+            <hr />
             <div className='card-text'>
-              <div>Balance: {this.props.users[userIdx].accounts[accountIdx].balance}</div>
+              <div>Balance: <span className='account-balance'>${this.props.users[userIdx].accounts[accountIdx].balance}</span></div>
               <hr />
             </div>
           </div>

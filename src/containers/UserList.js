@@ -13,6 +13,7 @@ class UserList extends Component {
           {this.props.users.map((user) => {
             return (
               <li key={user._id} className='list-group-item' onClick={() => this.props.selectUser(user)}>
+                <img className='user-list-img' src={`${user.image}`} alt='user' />
                 <Link to={`/users/${user._id}`}>{user.name}</Link>
               </li>
             )
