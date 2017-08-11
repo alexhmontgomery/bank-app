@@ -19,6 +19,6 @@ export function selectAccount (account) {
 export function withdrawFunds (amount) {
   return {
     type: WITHDRAW_FUNDS,
-    amount: parseInt(amount, 10)
+    amount: amount
   }
 }

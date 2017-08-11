@@ -22,7 +22,24 @@ const reducer = function (state = initialState, action) {
       }
     })
   } else if (action.type === WITHDRAW_FUNDS) {
-    return state
+    const userIdx = state.users.findIndex(user => user._id === state.selectedUser._id)
+    const accountIdx = state.users[userIdx].accounts.findIndex(account => account.id === state.selectedAccount.id)
+
+    return update(state, {
+      users: {
+        [userIdx]: {
+          accounts: {
+            [accountIdx]: {
+              balance: {
+                $apply: function (balance) {
+                  return balance - action.amount
+                }
+              }
+            }
+          }
+        }
+      }
+    })
   } else {
     return state
   }
